@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#e7e7e8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelInfoNameEn"
+                android:text="EngName"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelInfoNameAr"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotel Stars:"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/tvHotelStar"
+                android:padding="10dp"
+                />
+            <RatingBar
+                android:id="@+id/HotelInfoStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotel Rating:"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/tvHotelRat"
+                android:padding="10dp"/>
+            <RatingBar
+                android:id="@+id/HotelInfoRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="4"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                />
+            <Button
+                android:id="@+id/btnAddHotelRate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="#01579B"
+                android:text="Add Rate "
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:onClick="buttonOnClickHotelRate"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f1f1f2"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelInfoCityName"
+                android:text="CityName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelInfoPhone"
+                android:text="PhoneNumber"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelInfoWebSite"
+                android:text="Website"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHotelInfoEmail"
+                android:text="Email"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f1f1f2"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHotelInfoDesEng"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f1f1f2"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHotelInfoDesAr"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnHotelsRoom"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="8dp"
+                    android:background="@drawable/circle_btn"
+                    android:drawableTop="@android:drawable/ic_menu_search"
+                    android:text="Check Hotel Room "
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="buttonOnClickHR"/>
+                <Button
+                    android:id="@+id/btnMap"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_btn"
+                    android:drawableTop="@android:drawable/ic_dialog_map"
+                    android:text="Hotel  Location "
+                    android:textColor="#fff"
+                    android:textSize="11sp"
+                    android:textAllCaps="false"
+                    android:layout_toRightOf="@+id/btnHotelsRoom" />
+
+                <Button
+                    android:id="@+id/Call_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_btn"
+                    android:drawableTop="@android:drawable/sym_call_incoming"
+                    android:padding="8dp"
+                    android:textAllCaps="false"
+                    android:text="Call Hotel"
+                    android:textSize="11sp"
+                    android:layout_toRightOf="@+id/btnMap"
+                    android:textColor="#fff" />
+                </RelativeLayout>
+
+
+
+            <ListView
+                android:id="@+id/listHotelImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:listitem="@layout/row_image"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
